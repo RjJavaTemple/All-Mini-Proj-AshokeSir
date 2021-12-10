@@ -1,0 +1,12 @@
+package In.Ranjan.Entity;
+
+public class Contact {
+
+	private Integer ContactId;
+	private Integer ContactName;
+	private Integer ContactEmail;
+	private Integer ContactNumber;
+	private Integer ContactActiveSwitch;
+	private Integer ContactSaveTime;
+	private Integer ContactUpdateTime;
+}

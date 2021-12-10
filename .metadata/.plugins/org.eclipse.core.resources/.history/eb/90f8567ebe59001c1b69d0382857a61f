@@ -1,0 +1,20 @@
+package In.Ranjan.Rest;
+
+import org.springframework.web.bind.annotation.RestController;
+
+import In.Ranjan.Binding.ContactForm;
+import In.Ranjan.Service.IContactService;
+
+@RestController
+public class ContactController {
+
+	// Has-A Relancation In The Service Class
+	private IContactService service;
+
+	// Save The Data
+	public String SaveData(ContactForm from) {
+
+		return service.SaveContact(from);
+	}
+
+}

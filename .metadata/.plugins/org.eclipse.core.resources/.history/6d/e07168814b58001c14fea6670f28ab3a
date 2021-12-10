@@ -1,0 +1,5 @@
+package In.Ranjan.Repository;
+
+public interface ContactRepository {
+
+}

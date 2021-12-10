@@ -1,0 +1,20 @@
+package In.Ranjan.Entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import lombok.Data;
+
+@Data
+@Entity
+@Table(name = "Contact_Tab1")
+public class Contact {
+
+	private Integer ContactId;
+	private Integer ContactName;
+	private Integer ContactEmail;
+	private Integer ContactNumber;
+	private Integer ContactActiveSwitch;
+	private Integer ContactSaveTime;
+	private Integer ContactUpdateTime;
+}

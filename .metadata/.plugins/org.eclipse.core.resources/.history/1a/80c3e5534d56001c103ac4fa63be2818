@@ -1,0 +1,27 @@
+package com.example.demo.EController;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.demo.Entity.EmployeeEntity;
+import com.example.demo.Repo.EmployeeRepo;
+
+@RestController
+public class EmployeeController {
+
+	// Has-A Relencation In The Repo Class Use The Autowired
+	@Autowired
+	private EmployeeRepo repo;
+
+	@PostMapping("savedata")
+	public String SaveData(EmployeeEntity ent) {
+
+		List<EmployeeEntity> ent1 = (List<EmployeeEntity>) repo.save(ent);
+
+		return ent1;
+
+	}
+}

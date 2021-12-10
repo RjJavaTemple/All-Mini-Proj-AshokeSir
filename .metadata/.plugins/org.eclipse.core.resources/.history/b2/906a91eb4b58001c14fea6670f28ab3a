@@ -1,0 +1,14 @@
+package In.Ranjan.Binding;
+
+import java.time.LocalDate;
+
+public class ContactForm {
+	private Integer ContactId;
+	private String ContactName;
+	private String ContactEmail;
+	private Long ContactNumber;
+	private Integer ContactActiveSwitch;
+	private LocalDate ContactSaveTime;
+	private LocalDate ContactUpdateTime;
+
+}

@@ -1,0 +1,14 @@
+package In.Ranjan.Rest;
+
+import org.springframework.web.bind.annotation.RestController;
+
+import In.Ranjan.Service.ContactServiceImpl;
+import In.Ranjan.Service.IContactService;
+
+@RestController
+public class ContactController {
+
+	// Has-A Relancation In The Service Class
+	private IContactService service;
+
+}

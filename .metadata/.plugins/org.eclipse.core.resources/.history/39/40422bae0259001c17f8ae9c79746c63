@@ -1,0 +1,38 @@
+package In.Ranjan.Service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import In.Ranjan.Binding.ContactForm;
+import In.Ranjan.Repository.ContactRepository;
+
+@Service
+public class ContactServiceImpl implements IContactService {
+
+	// Add The Class The Repository Has-A Property
+	@Autowired
+	private ContactRepository ConRepo;
+
+	public String SaveContact(ContactForm contact) {
+
+		return null;
+	}
+
+	public List<ContactForm> GetContact() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public ContactForm EditContact(Integer contactid) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public List<ContactForm> DeleteContact(Integer ContactId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

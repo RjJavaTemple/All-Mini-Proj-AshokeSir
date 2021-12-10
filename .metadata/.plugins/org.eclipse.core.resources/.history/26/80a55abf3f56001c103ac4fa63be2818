@@ -1,0 +1,13 @@
+package com.example.demo.Modle;
+
+import lombok.Data;
+
+@Data
+public class EmployeeTabModle {
+
+	private Integer EmpId;
+	private String EmpName;
+	private String EmpAddress;
+	private String EmpDegs;
+	private Double Empsalary;
+}

@@ -1,0 +1,5 @@
+package In.Ranjan.Service;
+
+public interface IContactService {
+
+}

@@ -1,0 +1,18 @@
+package com.example.demo.Controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+import com.example.demo.Repo.EmployeeRepo;
+
+@Controller
+public class EmployeeController {
+
+	// Has-A Relencation In The Repo Class Use The Autowired
+	@Autowired
+	private EmployeeRepo repo;
+
+	public void name() {
+
+	}
+}
